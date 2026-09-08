@@ -1,4 +1,3 @@
-require("dotenv").config();
 const connectToDb = require("./Database/index");
 const express = require("express");
 const routes = require("./Routes/index");
