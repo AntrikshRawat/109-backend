@@ -13,6 +13,11 @@ app.use(express.urlencoded({ limit: '10mb', extended: true }));
 
 connectToDb();
 
+
+app.get("/",(_,res)=>{
+     res.send("working...");
+})
+
 app.use("/data",routes);
 
 app.listen(3000,()=>{
